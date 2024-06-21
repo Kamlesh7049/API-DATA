@@ -1,0 +1,44 @@
+{
+  "registration": [
+    {
+      "id": "1",
+      "name": "kamlesh"
+    },
+    {
+      "id": "62c2",
+      "name": "Kamlesh Shah",
+      "username": "kamlesh@1223"
+    },
+    {
+      "id": "5f2e",
+      "name": "Adharsh Tiwari",
+      "username": "adharsh@12334"
+    },
+    {
+      "id": "34c6",
+      "name": "Kamlesh Shah",
+      "username": "admin123@gmail.com"
+    },
+    {
+      "id": "61c2",
+      "name": "Kamlesh Shah",
+      "username": "admin123@gmail.com"
+    },
+    {
+      "id": "b627",
+      "name": "Amit Sahu",
+      "username": "admin123@gamil.com",
+      "mobile": "7044778800",
+      "password": "Amit@123",
+      "cpassword": "Amit@123"
+    },
+    {
+      "id": "beaf",
+      "name": "Kamlesh Shah",
+      "username": "admin0000@gmail.com",
+      "mobile no": "7049776747",
+      "password": "Kaml@123",
+      "cpassword": "Kaml@123"
+    }
+  ]
+}
