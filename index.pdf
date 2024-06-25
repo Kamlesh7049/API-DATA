@@ -1,0 +1,226 @@
+Microsoft Windows [Version 10.0.19045.4529]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\hp\Desktop\crud>json-server --watch data.json -p4000
+--watch/-w can be omitted, JSON Server 1+ watches for file changes by default
+JSON Server started on PORT :4000
+Press CTRL-C to stop
+Watching data.json...
+
+( ˶ˆ ᗜ ˆ˵ )
+
+Index:
+http://localhost:4000/
+
+Static files:
+Serving ./public directory if it exists
+
+Endpoints:
+http://localhost:4000/registration
+
+
+
+
+
+HTML
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center style="padding: 150px;">
+    <input type="text" placeholder="Enter Your name" id="name"><br>
+    <input type="text" placeholder=" Enter UserName" id="uname"><br>
+    <input type="tel" placeholder=" Enter Mobile No" id="mobile"><br>
+    <input type="password" placeholder=" Enter Your Password" id="password"><br>
+    <input type="password" placeholder="Enter Confarm Password" id="cpassword"><br> 
+    <button onclick="sub()">Registration</button>
+</center>
+
+    <script src="./apidata.js"></script>
+</body>
+</html>
+
+
+JS
+-----------
+function sub(){
+    let nam=document.querySelector("#name").value; 
+    let username=document.querySelector("#uname").value; 
+    let mobile=document.querySelector("#mobile").value; 
+    let password=document.querySelector("#password").value; 
+    let cpassword=document.querySelector("#cpassword").value; 
+    let obj={
+        "name":nam,
+        "username":username,
+        "mobile no":mobile,
+        "password":password,
+        "cpassword":cpassword
+    }
+    fetch('http://localhost:4000/registration',{
+        method:"POST",
+        headers:{
+            'content-type':'application/json'
+        },
+        body:JSON.stringify(obj)
+    })
+
+
+}
+
+
+show data in Front- end 
+-------------------------------------
+
+
+HTML
+------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body onload="show()">
+    
+<center style="padding: 150px;">
+    <input type="text" placeholder="Enter Your name" id="name"><br>
+    <input type="text" placeholder=" Enter UserName" id="uname"><br>
+    <input type="tel" placeholder=" Enter Mobile No" id="mobile"><br>
+    <input type="password" placeholder=" Enter Your Password" id="password"><br>
+    <input type="password" placeholder="Enter Confarm Password" id="cpassword"><br> 
+    <button onclick="sub()">Registration</button>
+</center>
+<!-- Show data in table font-end -->
+<table id="show" border="2px" align="center"></table>
+
+    <script src="./apidata.js"></script>
+</body>
+</html>
+
+
+
+JS
+-----------------------
+
+
+
+
+function sub(){
+    let nam=document.querySelector("#name").value; 
+    let username=document.querySelector("#uname").value; 
+    let mobile=document.querySelector("#mobile").value; 
+    let password=document.querySelector("#password").value; 
+    let cpassword=document.querySelector("#cpassword").value; 
+//     let obj={
+//         "name":nam,
+//         "username":username,
+//         "mobile":mobile,
+//         "password":password,
+//         "cpassword":cpassword
+//     }
+
+
+//     fetch('http://localhost:4000/registration',{
+//         method:"POST",
+//         headers:{
+//             'content-type':'application/json'
+//         },
+//         body:JSON.stringify(obj)
+//     })
+// }
+    //1. BY Usins async  Show in front end!
+    // ---------------------------
+
+//     async function show(){
+//         let data=await fetch('http://localhost:4000/registration');
+//         let response=await data.json();
+//     document.querySelector('#show').innerHTML=response.map(items=>`
+//         <tr>
+//         <td>${items.name}</td>
+//         <td>${items.username}</td>
+//         <td>${items.mobile}</td>
+//         <td>${items.password}</td>
+//         <td>${items.cpassword}</td>
+//         </tr>`).join(" ");
+//  }
+
+
+
+
+
+
+
+
+JSON
+--------
+
+{
+  "registration": [
+  
+
+
+
+  ],
+  "logIn": [
+
+    
+  ]
+}
+
+
+
+
+
+---------------------------------------------
+{
+  "registration": [
+    {
+      "id": "1",
+      "name": "kamlesh"
+    },
+    {
+      "id": "62c2",
+      "name": "Kamlesh Shah",
+      "username": "kamlesh@1223"
+    },
+    {
+      "id": "5f2e",
+      "name": "Adharsh Tiwari",
+      "username": "adharsh@12334"
+    },
+    {
+      "id": "34c6",
+      "name": "Kamlesh Shah",
+      "username": "admin123@gmail.com"
+    },
+    {
+      "id": "61c2",
+      "name": "Kamlesh Shah",
+      "username": "admin123@gmail.com"
+    },
+    {
+      "id": "b627",
+      "name": "Amit Sahu",
+      "username": "admin123@gamil.com",
+      "mobile": "7044778800",
+      "password": "Amit@123",
+      "cpassword": "Amit@123"
+    },
+    {
+      "id": "beaf",
+      "name": "Kamlesh Shah",
+      "username": "admin0000@gmail.com",
+      "mobile no": "7049776747",
+      "password": "Kaml@123",
+      "cpassword": "Kaml@123"
+    }
+  ]
+}
+
