@@ -1,28 +1,12 @@
 {
   "registration": [
     {
-      "id": "qqqq",
-      "name": "11234",
-      "username": "1234567890-",
-      "mobile": "123456789",
-      "password": "123",
-      "cpassword": "123"
-    },
-    {
-      "id": "",
-      "name": "",
-      "username": "",
-      "mobile": "",
-      "password": "",
-      "cpassword": ""
-    },
-    {
-      "id": "eeeeeeeeeeeee",
-      "name": "ertyui",
-      "username": "sdfghj",
-      "mobile": "78456123",
-      "password": "123",
-      "cpassword": "123"
+      "id": "123",
+      "name": "Kamlesh Shah",
+      "username": "admin123@gmail.com",
+      "mobile": "7049776747",
+      "password": "admin@123",
+      "cpassword": "admin@123"
     }
   ],
   "logIn": []
