@@ -7,10 +7,12 @@ function sub(){
     let obj={
         "name":nam,
         "username":username,
-        "mobile no":mobile,
+        "mobile":mobile,
         "password":password,
         "cpassword":cpassword
     }
+
+
     fetch('http://localhost:4000/registration',{
         method:"POST",
         headers:{
@@ -18,6 +20,18 @@ function sub(){
         },
         body:JSON.stringify(obj)
     })
-
-
 }
+    // Show in front end!
+    async function show(){
+        let data=await fetch('http://localhost:4000/registration');
+        let response=await data.json();
+    document.querySelector('#show').innerHTML=response.map(items=>`
+        <tr>
+        <td>${items.name}</td>
+        <td>${items.username}</td>
+        <td>${items.mobile}</td>
+        <td>${items.password}</td>
+        <td>${items.cpassword}</td>
+        </tr>`).join(" ");
+ }
+ 
