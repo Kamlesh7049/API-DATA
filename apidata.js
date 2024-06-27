@@ -66,6 +66,7 @@ function sub(){
 let information = {
            "id":id,
            "name":nam,
+           "img":img,
            "username":username,
             "mobile":mobile,
             "password":password,

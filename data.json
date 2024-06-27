@@ -1,6 +1,14 @@
 {
   "registration": [
-   
+    {
+      "id": "2020",
+      "name": "Rajesh",
+      "img": {},
+      "username": "rajesh@gmail.com",
+      "mobile": "7894561230",
+      "password": "123",
+      "cpassword": "123"
+    }
   ],
   "logIn": []
 }
