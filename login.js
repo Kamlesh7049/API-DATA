@@ -5,7 +5,8 @@
     let password=document.querySelector('#password').value;
 
     let filterdata=response.filter(items=>items.username===username && items.password===password)
-
+     
+    window.localStorage.setItem('information',JSON.stringify(filterdata))
     console.log(filterdata)
 
     if(filterdata.length>=1){
