@@ -10,7 +10,7 @@
 
     if(filterdata.length>=1){
         window.alert("successfully login");
-        window.open("dashboar.html");
+        window.open("dashborad.html");
     }
     else{
         window.alert("register first");
