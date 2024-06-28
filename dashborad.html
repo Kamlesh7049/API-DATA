@@ -8,15 +8,13 @@
         body {
             margin: 0px;
             padding: 0px;
-            box-sizing: border-box;
-            /* background-color:black; */
             
         }
 
         aside {
             float: left;
             background-color:black;
-            /* color: white; */
+            color: white;
             height: 100vh;
         }
 
@@ -42,6 +40,9 @@
             color: white;
             padding: 20px;
             margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         #logo {
             width: 50px;
@@ -50,13 +51,26 @@
             border-radius: 50%;
             background:linear-gradient(yellow,green) ;
         }
+        #showinfo {
+            display: block;
+            height: 150px;
+            line-height:2;
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            left: 90%;
+            background-color: darkgray;
+            color: crimson;
+            
+        }
+
     </style>
 </head>
 <body>
     <!-- dashborad.......................! -->
      <aside>
         <ul>
-            <li id="logo" style="margin-left: 20%;"></li>
+          
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Customers</a></li>
             <li><a href="#">Projects</a></li>
@@ -66,11 +80,13 @@
             <li><a href="#">Tasks</a></li>
         </ul>
      </aside>
-     <!-- <center><h1 id="admin">Admin Dashboard</h1></center> -->
+    
 
      <div id="admin">
+        <div></div>
         <h1>Admin Dashboard</h1>
-        <div id="logo"></div>
+        <div id="logo" onclick="showdata()"></div>
+        <div id="showinfo"></div>
 
      </div>
 

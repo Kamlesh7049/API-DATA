@@ -1,11 +1,11 @@
 {
   "registration": [
     {
-      "id": "2020",
-      "name": "Rajesh",
-      "img": {},
-      "username": "rajesh@gmail.com",
-      "mobile": "7894561230",
+      "id": "123",
+      "name": "Shubham",
+      "img": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      "username": "admin@gmail.com",
+      "mobile": "789456123",
       "password": "123",
       "cpassword": "123"
     }

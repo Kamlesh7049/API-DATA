@@ -1,6 +1,7 @@
 function sub(){
     let id=document.querySelector('#id').value;
     let nam=document.querySelector("#name").value; 
+    let img=document.querySelector("#img").value; 
     let username=document.querySelector("#uname").value; 
     let mobile=document.querySelector("#mobile").value; 
     let password=document.querySelector("#password").value; 
