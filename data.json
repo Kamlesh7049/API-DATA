@@ -1,11 +1,11 @@
 {
   "registration": [
     {
-      "id": "123",
-      "name": "Shubham",
-      "img": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
-      "username": "admin@gmail.com",
-      "mobile": "789456123",
+      "id": "12345",
+      "name": "Sani",
+      "img": "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
+      "username": "sani@gmail.com",
+      "mobile": "7894561230",
       "password": "123",
       "cpassword": "123"
     }
