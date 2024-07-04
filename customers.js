@@ -1,6 +1,8 @@
+let response;
 (async function(){
     let data= await fetch('http://localhost:4000/registration');
-    let response= await data.json();
+    // let  response= await data.json();
+    response= await data.json();
     document.querySelector('#show').innerHTML=response.map(items=>`
     <tr>
     <td>${items.id}</td>
@@ -9,7 +11,7 @@
     <td>${items.username}</td>
     <td>${items.mobile}</td>
     <td onclick="del(${items.id})"> <i class="fa fa-trash" aria-hidden="true"></i></td>
-    <td><i class="fas fa-edit"></i></td>
+    <td onclick="upd(${items.id})><i class="fas fa-edit"></i></td>
     </tr> 
     `).join(" ");
 
@@ -23,5 +25,15 @@ function del(arg){
         } 
           
         fetch(url,obj);
+
+}
+
+function upd(id){
+    let filterid=response.filter(items=>items.id==id);
+    console.log(filterid);
+
+
+    let formdesign =`input type="text" placeholder="enter id" id="id1"
+    value=$`
 
 }
