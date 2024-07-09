@@ -11,14 +11,14 @@ let response;
     <td>${items.username}</td>
     <td>${items.mobile}</td>
     <td onclick="del(${items.id})"> <i class="fa fa-trash" aria-hidden="true"></i></td>
-    <td onclick="upd(${items.id})><i class="fas fa-edit"></i></td>
+    <td onclick="upd(${items.id})"><i class="fas fa-edit"></i></td>
     </tr> 
     `).join(" ");
 
 })();
 
 function del(arg){
-    alert(arg)
+    alert(arg )
         let url=`http://localhost:4000/registration/${arg}`;
         let obj= {
             method:"DELETE"
@@ -27,6 +27,7 @@ function del(arg){
         fetch(url,obj);
 
 }
+
 
 function upd(id){
     let filterid=response.filter(items=>items.id==id);
@@ -55,7 +56,36 @@ function upd(id){
 
 
 
+
 }
+function update(id){
+    let id1=document.querySelector('#id1').value;
+    let nam1=document.querySelector('#name1').value;
+    let img1=document.querySelector('#img1').value;
+    let username1=document.querySelector('#uname1').value;
+    let mobile1=document.querySelector('#mob1').value;
+    let password1=document.querySelector('#pass1').value;
+    let cpassword1=document.querySelector('#cpass1').value;
 
 
+    let information={
+        "id":id1,
+        "name":nam1,
+        "img":img1,
+        "username":username1,
+        "mobile":mobile1,
+        "password":password1,
+        "cpassword1":cpassword1
 
+    }
+    let url=`http://localhost:4000/registration/${id}`;
+    let obj={
+        method:"PUT",
+        header:{
+            'content-type':'application/json'
+        },
+        body:JSON.stringify(information)
+    }
+    fetch(url,obj);
+
+}
