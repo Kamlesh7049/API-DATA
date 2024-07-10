@@ -5,18 +5,36 @@
       "name": "Sanidevgal",
       "img": "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg",
       "username": "sani@gmail.com",
+      "mobile": "789456123000",
+      "password": "123455",
+      "cpassword1": "undefined"
+    },
+    {
+      "id": "2025",
+      "name": "Kamlesh Shah",
+      "img": "C:\\Users\\hp\\Downloads\\My-img01.jpg",
+      "username": "kamlesh@gmail.com",
       "mobile": "7894561230",
       "password": "123",
       "cpassword1": "undefined"
     },
     {
-      "id": "2025",
-      "name": "Kamlesh",
-      "img": "C:\\Users\\hp\\Downloads\\My-img01.jpg",
-      "username": "admin123@gmail.com",
+      "id": "1233",
+      "name": "kamlesh shah",
+      "img": "NAN",
+      "username": "kaml123@gmail.com",
       "mobile": "7894561230",
       "password": "123",
-      "cpassword": "123"
+      "cpassword1": "undefined"
+    },
+    {
+      "id": "",
+      "name": "",
+      "img": "",
+      "username": "",
+      "mobile": "",
+      "password": "",
+      "cpassword": ""
     }
   ],
   "logIn": []

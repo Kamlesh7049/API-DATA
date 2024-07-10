@@ -36,18 +36,12 @@ function upd(id){
 
     let formdesign =`<input type="text" placeholder="enter id" id="id1"
     value="${filterid[0].id}"><br>
-    let formdesign =<input type="text" placeholder="enter id" id="name1"
-    value="${filterid[0].name}"><br>
-    let formdesign =<input type="text" placeholder="enter id" id="img1"
-    value="${filterid[0].img}"><br>
-    let formdesign =<input type="text" placeholder="enter id" id="uname1"
-    value="${filterid[0].username}"><br>
-    let formdesign =<input type="text" placeholder="enter id" id="mob1"
-    value="${filterid[0].mobile}"><br>
-    let formdesign =<input type="text" placeholder="enter id" id="pass1"
-    value="${filterid[0].password}"><br>
-    let formdesign =<input type="text" placeholder="enter id" id="cpass1"
-    value="${filterid[0].cpassword}"><br>
+    <input type="text" placeholder="enter id" id="name1"value="${filterid[0].name}"><br>
+    <input type="text" placeholder="enter id" id="img1"value="${filterid[0].img}"><br>
+    <input type="text" placeholder="enter id" id="uname1"value="${filterid[0].username}"><br>
+    <input type="text" placeholder="enter id" id="mob1"value="${filterid[0].mobile}"><br>
+    <input type="text" placeholder="enter id" id="pass1"value="${filterid[0].password}"><br>
+    <input type="text" placeholder="enter id" id="cpass1"value="${filterid[0].cpassword}"><br>
     <button onclick="update(${filterid[0].id})">update</button>`;
     document.querySelector('section').style.filter="blur(5px)"
     console.log(id)
